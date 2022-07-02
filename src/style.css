@@ -1,4 +1,145 @@
-body {
-    background: linear-gradient(180deg, #61F0E8 0%, rgba(173, 119, 242, 0.42) 100%);
+.background {
+
+position: relative;
+width: 1440px;
+height: 1024px;
+background:  linear-gradient(180deg, #61F0E8 0%, rgba(173, 119, 242, 0.42) 100%);
     
 }
+
+
+#bannerText {
+    position: absolute;
+    width: 1362px;
+    height: 80px;
+    left: 36px;
+    top: 10px;
+    background: #F4E5E5;
+    border-radius: 39px;
+
+}
+
+#mainTitle {
+
+position: absolute;
+left: 375px;
+width: 690px;
+top: 110px;
+background: #F4E5E5;
+border-radius: 72px;
+
+}
+
+.titulo {
+
+text-align: center;
+font-weight: 400;
+font-size: 44px;
+line-height: 81px;
+color: #350275;
+
+}
+
+.form1 {
+
+position: absolute;
+width: 651px;
+height: 500px;
+left: 43px;
+top: 280px;
+background: #F4E5E5;
+border-radius: 45px;
+
+}
+
+.form2 {
+
+position: absolute;
+width: 651px;
+height: 500px;
+left: 740px;
+top: 280px;
+background: #F4E5E5;
+border-radius: 45px;
+
+}
+
+.formTitle {
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 15px;
+margin-left: 170px;
+
+color: #350275;
+}
+
+.textBox {
+
+width: 560px;
+height: 31px;
+background: #FFFFFF;
+opacity: 0.9;
+border-color: #FFFFFF;
+
+}
+
+.textForm {
+
+font-weight: 400;
+font-size: 25px;
+color: #350275;
+
+}
+
+.botonGuardar {
+
+position: absolute;
+width: 199px;
+height: 53px;
+left: calc(50% - 199px/2 - 2.5px);
+top: 820px;
+cursor: pointer;
+background: #8540DD;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+color: #F4E5E5;
+border-style: none;
+
+}
+
+.footer {
+position: absolute;
+width: 1440px;
+height: 74px;
+top: 933px;
+
+background: #F4E5E5;
+
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+}
+
+#adressFooter {
+position: absolute;
+left: 96px;
+top: 37px;
+}
+
+#phoneFooter {
+position: absolute;
+left: 669px;
+top: 37px;
+}
+
+#termsFooter {
+position: absolute;
+left: 1209px;
+top: 37px;
+}
+

@@ -6,66 +6,90 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main>
+    <div class="background">
 
-      <form>
+    <header class="banner">
+      <h1 class="titulo" id="bannerText">Spa "La Llama Violeta"</h1>
+    </header>
+    
+    <main>
+      <h2 class="titulo" id="mainTitle">Registrar mis datos de compra</h2>
+      <form class="form1">
+        <p class="formTitle">Mis datos personales</p>
         <ul>
           <p>
-                <label for="name">Nombre:</label>
+                <label for="name" class="textForm">Nombre:</label>
                 <br>
-                <input type="text" id="name" name="user_name" placeholder="Escriba aquí">
+                <input class= "textBox" type="text" id="name" name="user_name" placeholder="Escriba aquí">
                 </p>
 
                 <p>
 
-                  <label for="mail">Correo electrónico:</label>
+                  <label for="mail" class="textForm">Correo electrónico:</label>
                   <br>
-                  <input type="email" id="mail" name="user_mail">
+                  <input class= "textBox" type="email" id="mail" name="user_mail" placeholder="usuario@correo.com">
                 </p>
                   
                 <p>
-                <label for="phone">Número telefónico:</label>
+                <label for="phone" class="textForm">Número telefónico:</label>
                 <br>
-                <input type="tel" id="phone" name="user_phone">
+                <input class= "textBox" type="tel" id="phone" name="user_phone" placeholder="+56900000000">
               </p>
                 
               <p>
-                <label for="adress">Dirección:</label>
+                <label for="adress" class="textForm">Dirección:</label>
                 <br>
-                <input type="text" id="adress" name="user_adress" placeholder="Escriba aquí">
+                <input class= "textBox" type="text" id="adress" name="user_adress" placeholder="Escriba aquí">
                 </p>
-             
+              </ul>
+              </form>
+
+              <form class="form2">
+                <p class="formTitle">Datos de mi tarjeta</p>
+                <ul>
                 <p>
-                <label for="cardNumber">Número de tarjeta:</label>
+                <label for="cardNumber" class="textForm">Número de tarjeta:</label>
                 <br>
-                <input type="text" id="cardNumber" name="card_number" maxlength="16" minlength= "16" size="16">
+                <input class= "textBox" type="text" id="cardNumber" name="card_number" maxlength="16" minlength= "16" size="16" placeholder="Escriba los números ubicados en la parte frontal de su tarjeta">
               </p>
 
               <p>
-                <label for="cardCvv">CVV:</label>
+                <label for="cardCvv" class="textForm">CVV:</label>
                 <br>
-                <input type="text" id="cardCvv" name="card_cvv" maxlength="3" minlength= "3" size="3">
+                <input class= "textBox" type="text" id="cardCvv" name="card_cvv" maxlength="3" minlength= "3" size="3" placeholder="Escriba los tres números ubicados en la parte posterior de su tarjeta">
               </p>
 
                 <p>
-                <label for="date">Fecha de vencimiento:</label>
+                <label for="date" class="textForm">Fecha de vencimiento:</label>
                 <br>
-                <input type="month" id="date" name="card_date">
+                <input class= "textBox" type="month" id="date" name="card_date" placeholder="mes y año">
               </p>
 
               
               <p>
-                <label for="country">País:</label>
+                <label for="country" class="textForm">País:</label>
                 <br>
-                <input type="select" id="country" name="card_country">
+                <select name="country" class= "textBox" type="select" id="country" name="card_country">
+                  <option value="none" selected disabled hidden>Seleccione país</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Perú">Perú</option>
+                  <option value="México">México</option>
+                  <option value="Colombia">Colombia</option>
+                  
+                </select>
               </p>
-                <br>
+       
         </ul>
         
     </form>
+    <button type="submit" class= "botonGuardar">Guardar</button>
     </main>
-    <footer></footer>
+    
+    <footer>
+      <p class="footer"><span id="adressFooter">4 Privet Drive, Little Whinging, Surrey</span> <span id="phoneFooter">212-636-5108</span> <span id="termsFooter">Terms and conditions</span> </p>
+  
+    </footer>
     <script src="index.js" type="module"></script>
+  </div>
   </body>
 </html>
