@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+      </head>
+
   <body>
     <div class="background">
 
     <header class="banner">
-      <h1 class="titulo" id="bannerText">Spa "La Llama Violeta"</h1>
+      <h1 class="titulo" id="bannerText">Tienda "La Llama Violeta"</h1>
     </header>
     
     <main>
@@ -20,20 +21,20 @@
           <p>
                 <label for="name" class="textForm">Nombre:</label>
                 <br>
-                <input class= "textBox" type="text" id="name" name="user_name" placeholder="Escriba aquí">
+                <input class= "textBox" type="text" id="name" name="user_name" placeholder="Escriba aquí" required>
                 </p>
 
                 <p>
 
                   <label for="mail" class="textForm">Correo electrónico:</label>
                   <br>
-                  <input class= "textBox" type="email" id="mail" name="user_mail" placeholder="usuario@correo.com">
+                  <input class= "textBox" type="email" id="mail" name="user_mail" placeholder="usuario@correo.com" required>
                 </p>
                   
                 <p>
                 <label for="phone" class="textForm">Número telefónico:</label>
                 <br>
-                <input class= "textBox" type="tel" id="phone" name="user_phone" placeholder="+56900000000">
+                <input class= "textBox" type="tel" id="phone" name="user_phone" placeholder="+56900000000" maxlength="12">
               </p>
                 
               <p>
@@ -50,26 +51,26 @@
                 <p>
                 <label for="cardNumber" class="textForm">Número de tarjeta:</label>
                 <br>
-                <input class= "textBox" type="text" id="cardNumber" name="card_number" maxlength="16" minlength= "16" size="16" placeholder="Escriba los números ubicados en la parte frontal de su tarjeta">
+                <input class= "textBox" type="text" id="cardNumber" name="card_number" maxlength="16" minlength= "14" size="16" placeholder="Escriba los números ubicados en la parte frontal de su tarjeta" required>
               </p>
 
               <p>
                 <label for="cardCvv" class="textForm">CVV:</label>
                 <br>
-                <input class= "textBox" type="text" id="cardCvv" name="card_cvv" maxlength="3" minlength= "3" size="3" placeholder="Escriba los tres números ubicados en la parte posterior de su tarjeta">
+                <input class= "textBox" type="text" id="cardCvv" name="card_cvv" maxlength="3" minlength= "3" size="3" placeholder="Escriba los tres números ubicados en la parte posterior de su tarjeta" required>
               </p>
 
                 <p>
                 <label for="date" class="textForm">Fecha de vencimiento:</label>
                 <br>
-                <input class= "textBox" type="month" id="date" name="card_date" placeholder="mes y año">
+                <input class= "textBox" type="month" id="date" name="card_date" required>
               </p>
 
               
               <p>
                 <label for="country" class="textForm">País:</label>
                 <br>
-                <select name="country" class= "textBox" type="select" id="country" name="card_country">
+                <select name="country" class= "textBox" id="country" name="card_country" required>
                   <option value="none" selected disabled hidden>Seleccione país</option>
                   <option value="Chile">Chile</option>
                   <option value="Perú">Perú</option>
@@ -82,14 +83,14 @@
         </ul>
         
     </form>
-    <button type="submit" class= "botonGuardar">Guardar</button>
+    <button type="button" class= "botonValidar" id="buttonFunction">Validar</button>
     </main>
     
     <footer>
       <p class="footer"><span id="adressFooter">4 Privet Drive, Little Whinging, Surrey</span> <span id="phoneFooter">212-636-5108</span> <span id="termsFooter">Terms and conditions</span> </p>
   
     </footer>
-    <script src="index.js" type="module"></script>
+  <script src="index.js" type="module"></script>
   </div>
   </body>
 </html>
