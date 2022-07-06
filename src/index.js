@@ -4,6 +4,7 @@ const element= document.getElementById('buttonFunction');
 
 element.addEventListener('click', buttonFunction);
 
+
 //LLamando a todos los valores del formulario
 function buttonFunction () {
     let userName= document.getElementById('name').value
@@ -15,8 +16,13 @@ function buttonFunction () {
     let cardCvv= document.getElementById('cardCvv').value
     let cardDate= document.getElementById('date').value
     let cardCountry= document.getElementById('country').value
+/*
+    function errorCardNumber () {   
+      if (isNaN(cardNumber)|| cardNumber===null){
+        document.getElementById("demo").innerHTML+= 'Introduce solo números';
+  }
 
-     
+} */
     console.log(userName);
     console.log(userMail);
     console.log(cardDate);
@@ -25,12 +31,11 @@ function buttonFunction () {
     //Dando vuelta al número de tarjeta
     const reverseCard = cardNumber.toString().split('').reverse();
     console.log(reverseCard); 
+
+   
     }
 
+    
+    
 
-
-  /*  Probando la funcionalidad del botón
-    console.log(userName);
-    console.log(userMail);
-    console.log(cardDate);
-    console.log(cardNumber)*/
+ 
